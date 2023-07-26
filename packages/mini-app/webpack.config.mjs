@@ -258,11 +258,7 @@ export default env => {
          * Their names are used to match requested modules in this compilation.
          */
         shared: deps,
-      }),
-      new Repack.plugins.CodeSigningPlugin({
-        privateKeyPath: path.join('..', '..', 'code-signing.pem'),
-        outputPath: path.join('build', 'outputs', platform, 'remotes'),
-      }),
+      })
     ],
   };
 };
