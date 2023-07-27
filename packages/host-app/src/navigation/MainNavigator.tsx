@@ -1,13 +1,15 @@
 import { NativeStackNavigationProp, createNativeStackNavigator } from "@react-navigation/native-stack";
-import MiniAppScreen from "../screens/MiniAppScreen";
+import ShoppingAppScreen from "../screens/ShoppingAppScreen";
 import HomeScreen from "../screens/HomeScreen";
 import DetailScreen from "../screens/DetailScreen";
 import { StyleSheet } from "react-native";
+import TravelAppScreen from "../screens/TravelAppScreen";
 
 export type MainStackParamList = {
   Home: undefined;
   Detail: undefined;
-  MiniApp: undefined;
+  ShoppingApp: undefined;
+  TravelApp: undefined;
 };
 
 export type MainStackNavigationProp =
@@ -28,7 +30,8 @@ const MainNavigator = () => {
     >
       <Main.Screen name="Home" component={HomeScreen} />
       <Main.Screen name="Detail" component={DetailScreen} />
-      <Main.Screen name="MiniApp" component={MiniAppScreen} />
+      <Main.Screen name="ShoppingApp" component={ShoppingAppScreen} />
+      <Main.Screen name="TravelApp" component={TravelAppScreen} />
     </Main.Navigator>
   );
 };

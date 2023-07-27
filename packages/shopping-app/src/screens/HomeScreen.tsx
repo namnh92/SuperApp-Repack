@@ -8,26 +8,12 @@ const HomeScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.label}>HomeScreen</Text>
+      <Text style={styles.label}>ShoppingApp HomeScreen</Text>
       <Button
         color="rgba(127, 103, 190, 1)"
-        title="Navigate to DetailScreen"
+        title="Navigate to ShoppingApp GalleryScreen"
         onPress={() => {
-          navigation.navigate("Detail");
-        }}
-      />
-      <Button
-        color="rgba(127, 103, 190, 1)"
-        title="Navigate to ShoppingApp"
-        onPress={() => {
-          navigation.navigate("ShoppingApp");
-        }}
-      />
-      <Button
-        color="rgba(127, 103, 190, 1)"
-        title="Navigate to TravelApp"
-        onPress={() => {
-          navigation.navigate("TravelApp");
+          navigation.navigate('Gallery');
         }}
       />
     </View>

@@ -7,7 +7,8 @@ import { ScriptManager, Federated } from "@callstack/repack/client";
 ScriptManager.shared.addResolver(async (scriptId, caller) => {
   const resolveURL = Federated.createURLResolver({
     containers: {
-      MiniApp: "http://localhost:9001/[name][ext]",
+      ShoppingApp: "http://localhost:9001/[name][ext]",
+      TravelApp: "http://localhost:9002/[name][ext]",
     },
   });
 

@@ -3202,9 +3202,41 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"MiniApp@workspace:packages/mini-app":
+"ShoppingApp@workspace:packages/shopping-app":
   version: 0.0.0-use.local
-  resolution: "MiniApp@workspace:packages/mini-app"
+  resolution: "ShoppingApp@workspace:packages/shopping-app"
+  dependencies:
+    "@babel/core": ^7.20.0
+    "@babel/preset-env": ^7.20.0
+    "@babel/runtime": ^7.20.0
+    "@callstack/repack": ^3.3.1
+    "@react-native-community/eslint-config": ^3.2.0
+    "@react-navigation/native": ^6.1.6
+    "@react-navigation/native-stack": ^6.9.12
+    "@tsconfig/react-native": ^2.0.2
+    "@types/jest": ^29.2.1
+    "@types/react": ^18.0.24
+    "@types/react-test-renderer": ^18.0.0
+    babel-jest: ^29.2.1
+    babel-loader: ^9.1.3
+    eslint: ^8.19.0
+    jest: ^29.2.1
+    metro-react-native-babel-preset: 0.73.7
+    prettier: ^2.4.1
+    react: 18.2.0
+    react-native: 0.71.8
+    react-native-safe-area-context: ^4.5.0
+    react-native-screens: ^3.20.0
+    react-test-renderer: 18.2.0
+    terser-webpack-plugin: ^5.3.9
+    typescript: 4.8.4
+    webpack: ^5.88.2
+  languageName: unknown
+  linkType: soft
+
+"TravelApp@workspace:packages/travel-app":
+  version: 0.0.0-use.local
+  resolution: "TravelApp@workspace:packages/travel-app"
   dependencies:
     "@babel/core": ^7.20.0
     "@babel/preset-env": ^7.20.0
